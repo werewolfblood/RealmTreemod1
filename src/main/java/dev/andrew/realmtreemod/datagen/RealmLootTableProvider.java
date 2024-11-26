@@ -64,6 +64,24 @@ public class RealmLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(InitBlocks.DROW_PLANKS);
         addDrop(InitBlocks.DROW_PLANKS_SLAB);
         addDrop(InitBlocks.DROW_PLANKS_FENCE);
+        addDrop(InitBlocks.CRYSTAL_PLANKS);
+        addDrop(InitBlocks.CRYSTAL_SLAB);
+        addDrop(InitBlocks.CRYSTAL_FENCE);
+        addDrop(InitBlocks.ASHRET_PLANKS);
+        addDrop(InitBlocks.ASHRET_FENCE);
+        addDrop(InitBlocks.ASHRET_SLAB);
+        addDrop(InitBlocks.ELF_PLANKS);
+        addDrop(InitBlocks.ELF_FENCE);
+        addDrop(InitBlocks.ALOGRORN_PLANKS);
+        addDrop(InitBlocks.ALOGRORN_FENCE);
+        addDrop(InitBlocks.DIRE_PLANKS);
+        addDrop(InitBlocks.DIRE_FENCE);
+        addDrop(InitBlocks.DIRE_SLAB);
+        addDrop(InitBlocks.ELF_SLAB);
+        addDrop(InitBlocks.DROW_WALL_SIGN);
+
+
+
 
     }
 

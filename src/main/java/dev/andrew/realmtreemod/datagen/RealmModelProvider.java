@@ -15,6 +15,11 @@ public class RealmModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
 BlockStateModelGenerator.BlockTexturePool REALMGRANET = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.MITHRIL_PLANKS);
 BlockStateModelGenerator.BlockTexturePool RPGGRANET = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.DROW_PLANKS);
+BlockStateModelGenerator.BlockTexturePool RealmGranet = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.CRYSTAL_PLANKS);
+BlockStateModelGenerator.BlockTexturePool MMrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.ASHRET_PLANKS);
+BlockStateModelGenerator.BlockTexturePool PPrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.ELF_PLANKS);
+BlockStateModelGenerator.BlockTexturePool RRrealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.ALOGRORN_PLANKS);
+BlockStateModelGenerator.BlockTexturePool EErealgrant = blockStateModelGenerator.registerCubeAllModelTexturePool(InitBlocks.DIRE_PLANKS);
         blockStateModelGenerator.registerLog(InitBlocks.MITHRIL_LOG)
                         .log(InitBlocks.MITHRIL_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.BlACKWALNUT_LOG)
@@ -69,19 +74,32 @@ BlockStateModelGenerator.BlockTexturePool RPGGRANET = blockStateModelGenerator.r
                 .log(InitBlocks.DLONET_LOG);
         blockStateModelGenerator.registerLog(InitBlocks.DIRE_LOG)
                 .log(InitBlocks.DIRE_LOG);
+        blockStateModelGenerator.registerLog(InitBlocks.ASHRET_LOG)
+                .log(InitBlocks.ASHRET_LOG);
 
 
 
+        RealmGranet.slab(InitBlocks.CRYSTAL_SLAB);
         REALMGRANET.slab(InitBlocks.MITHRIL_PLANKS_SLAB);
         RPGGRANET.slab(InitBlocks.DROW_PLANKS_SLAB);
+        MMrealgrant.slab(InitBlocks.ASHRET_SLAB);
+        EErealgrant.slab(InitBlocks.DIRE_SLAB);
+        PPrealgrant.slab(InitBlocks.ELF_SLAB);
 
 
 
         REALMGRANET.fence(InitBlocks.MITHRIL_PLANKS_FENCE);
+        RRrealgrant.fence(InitBlocks.ALOGRORN_FENCE);
         RPGGRANET.fence(InitBlocks.DROW_PLANKS_FENCE);
+        RealmGranet.fence(InitBlocks.CRYSTAL_FENCE);
+        MMrealgrant.fence(InitBlocks.ASHRET_FENCE);
+        PPrealgrant.fence(InitBlocks.ELF_FENCE);
+        EErealgrant.fence(InitBlocks.DIRE_FENCE);
 
 
 
+
+        RPGGRANET.sign(InitBlocks.DROW_WALL_SIGN);
 
 
 

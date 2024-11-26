@@ -35,6 +35,21 @@
     "realmtreemod:drow_planks",
     "realmtreemod:drow_planks_slab",
     "realmtreemod:drow_planks_fence",
+    "realmtreemod:crystal_planks",
+    "realmtreemod:crystal_slab",
+    "realmtreemod:crystal_fence",
+    "realmtreemod:ashret_planks",
+    "realmtreemod:ashret_fence",
+    "realmtreemod:ashret_slab",
+    "realmtreemod:elf_planks",
+    "realmtreemod:elf_fence",
+    "realmtreemod:alogrorn_planks",
+    "realmtreemod:alogrorn_fence",
+    "realmtreemod:dire_planks",
+    "realmtreemod:dire_fence",
+    "realmtreemod:dire_slab",
+    "realmtreemod:elf_slab",
+    "realmtreemod:drow_wall_sign",
     "realmtreemod:blackwalnut_log"
   ]
 }

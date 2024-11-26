@@ -1,5 +1,10 @@
 {
   "values": [
+    "realmtreemod:dire_fence",
+    "realmtreemod:alogrorn_fence",
+    "realmtreemod:elf_fence",
+    "realmtreemod:ashret_fence",
+    "realmtreemod:crystal_fence",
     "realmtreemod:drow_planks_fence",
     "realmtreemod:mithril_planks_fence"
   ]

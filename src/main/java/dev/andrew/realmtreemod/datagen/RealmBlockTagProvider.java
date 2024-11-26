@@ -50,6 +50,21 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.DROW_PLANKS)
                 .add(InitBlocks.DROW_PLANKS_SLAB)
                 .add(InitBlocks.DROW_PLANKS_FENCE)
+                .add(InitBlocks.CRYSTAL_PLANKS)
+                .add(InitBlocks.CRYSTAL_SLAB)
+                .add(InitBlocks.CRYSTAL_FENCE)
+                .add(InitBlocks.ASHRET_PLANKS)
+                .add(InitBlocks.ASHRET_FENCE)
+                .add(InitBlocks.ASHRET_SLAB)
+                .add(InitBlocks.ELF_PLANKS)
+                .add(InitBlocks.ELF_FENCE)
+                .add(InitBlocks.ALOGRORN_PLANKS)
+                .add(InitBlocks.ALOGRORN_FENCE)
+                .add(InitBlocks.DIRE_PLANKS)
+                .add(InitBlocks.DIRE_FENCE)
+                .add(InitBlocks.DIRE_SLAB)
+                .add(InitBlocks.ELF_SLAB)
+                .add(InitBlocks.DROW_WALL_SIGN)
                 .add(InitBlocks.BlACKWALNUT_LOG);
 
 
@@ -93,18 +108,39 @@ public class RealmBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(InitBlocks.MITHRIL_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
+                .add(InitBlocks.DIRE_PLANKS)
+                .add(InitBlocks.ALOGRORN_PLANKS)
+                .add(InitBlocks.ELF_PLANKS)
+                .add(InitBlocks.ASHRET_PLANKS)
+                .add(InitBlocks.CRYSTAL_PLANKS)
                 .add(InitBlocks.DROW_PLANKS)
                 .add(InitBlocks.MITHRIL_PLANKS);
 
 
         getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(InitBlocks.ELF_SLAB)
+                .add(InitBlocks.DIRE_SLAB)
+                .add(InitBlocks.ASHRET_SLAB)
+                .add(InitBlocks.CRYSTAL_SLAB)
                 .add(InitBlocks.DROW_PLANKS_SLAB)
                 .add(InitBlocks.MITHRIL_PLANKS_SLAB);
 
 
         getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(InitBlocks.DIRE_FENCE)
+                .add(InitBlocks.ALOGRORN_FENCE)
+                .add(InitBlocks.ELF_FENCE)
+                .add(InitBlocks.ASHRET_FENCE)
+                .add(InitBlocks.CRYSTAL_FENCE)
                 .add(InitBlocks.DROW_PLANKS_FENCE)
                 .add(InitBlocks.MITHRIL_PLANKS_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.WALL_SIGNS)
+                .add(InitBlocks.DROW_WALL_SIGN);
+
+
+
+
 
 
 

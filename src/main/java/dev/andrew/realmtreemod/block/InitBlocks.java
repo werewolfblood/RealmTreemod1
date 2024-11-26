@@ -3,6 +3,7 @@ package dev.andrew.realmtreemod.block;
 import dev.andrew.realmtreemod.RealmTreeMod;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -11,6 +12,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+
+import static net.minecraft.block.Blocks.BIRCH_SIGN;
 
 public class InitBlocks {
 
@@ -56,7 +59,15 @@ public class InitBlocks {
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block GREEN_FIR_LOG = registerBlock("green_fir_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ELF_PLANKS = registerBlock("elf_planks",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ELF_FENCE = registerBlock("elf_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ELF_SLAB = registerBlock("elf_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block ASHRET_LOG = registerBlock("ashret_log",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ALOGRORN_PLANKS = registerBlock("alogrorn_planks",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block WEEPING_LOG = registerBlock("weeping_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
@@ -64,6 +75,8 @@ public class InitBlocks {
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block ALOGRORN_LOG = registerBlock("alogrorn_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ALOGRORN_FENCE = registerBlock("alogrorn_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block EIKEW_LOG = registerBlock("eikew_log",
             new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block DLONET_LOG = registerBlock("dlonet_log",
@@ -82,6 +95,37 @@ public class InitBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
     public static final Block DROW_PLANKS_FENCE = registerBlock("drow_planks_fence",
             new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block CRYSTAL_PLANKS = registerBlock("crystal_planks",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block CRYSTAL_SLAB = registerBlock("crystal_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block CRYSTAL_FENCE = registerBlock("crystal_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ASHRET_PLANKS = registerBlock("ashret_planks",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DIRE_PLANKS = registerBlock("dire_planks",
+            new PillarBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DIRE_FENCE = registerBlock("dire_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DIRE_SLAB = registerBlock("dire_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ASHRET_FENCE = registerBlock("ashret_fence",
+            new FenceBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block ASHRET_SLAB = registerBlock("ashret_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(1.5F, 6.0F).requiresTool()));
+    public static final Block DROW_WALL_SIGN = registerBlock("drow_wall_sign",
+            new WallSignBlock(
+                    WoodType.BIRCH,
+                    AbstractBlock.Settings.create()
+                            .mapColor(MapColor.PALE_YELLOW)
+                            .solid()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .noCollision()
+                            .strength(1.0F)
+                            .dropsLike(BIRCH_SIGN)
+                            .burnable()
+            )
+    );
     public static final Block MITHRIL_LEAVES = registerBlock("mithril_leaves",
             new LeavesBlock(AbstractBlock.Settings.create()
                     .mapColor(MapColor.PINK)
@@ -222,6 +266,26 @@ public class InitBlocks {
             entries.add(InitBlocks.DROW_PLANKS);
             entries.add(InitBlocks.DROW_PLANKS_SLAB);
             entries.add(InitBlocks.DROW_PLANKS_FENCE);
+            entries.add(InitBlocks.CRYSTAL_PLANKS);
+            entries.add(InitBlocks.CRYSTAL_SLAB);
+            entries.add(InitBlocks.CRYSTAL_FENCE);
+            entries.add(InitBlocks.ASHRET_PLANKS);
+            entries.add(InitBlocks.ASHRET_FENCE);
+            entries.add(InitBlocks.ASHRET_SLAB);
+            entries.add(InitBlocks.ELF_PLANKS);
+            entries.add(InitBlocks.ELF_FENCE);
+            entries.add(InitBlocks.ALOGRORN_PLANKS);
+            entries.add(InitBlocks.ALOGRORN_FENCE);
+            entries.add(InitBlocks.DIRE_PLANKS);
+            entries.add(InitBlocks.DIRE_FENCE);
+            entries.add(InitBlocks.DIRE_SLAB);
+            entries.add(InitBlocks.ELF_SLAB);
+            entries.add(InitBlocks.DROW_WALL_SIGN);
+
+
+
+
+
         });
     }
 }

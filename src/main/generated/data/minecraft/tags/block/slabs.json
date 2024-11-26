@@ -1,5 +1,9 @@
 {
   "values": [
+    "realmtreemod:elf_slab",
+    "realmtreemod:dire_slab",
+    "realmtreemod:ashret_slab",
+    "realmtreemod:crystal_slab",
     "realmtreemod:drow_planks_slab",
     "realmtreemod:mithril_planks_slab"
   ]
